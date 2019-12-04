@@ -1,0 +1,12 @@
+<ul >
+  {{#events}}
+    <li>
+        <h2>{{ title }}</h2>
+        <p>{{ description }}</p>
+	    <p>Likes: {{ likes }}</p>
+    </li>
+    <form method="put", target="like">
+        <button type="button">Like</button>
+    </form>
+  {{/events}}
+</ul>
